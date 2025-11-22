@@ -11,7 +11,7 @@ public class ClienteGatewayImpl implements ClienteGateway {
 
     private final RestTemplate restTemplate;
 
-    private final String URL_CLIENTE = "http://localhost:7000/api/prestamigos/cliente";
+    private final String URL_CLIENTE = "https://usuario-production-3568.up.railway.app/api/prestamigos/cliente";
 
     @Override
     public boolean existeCliente(Long clienteId) {

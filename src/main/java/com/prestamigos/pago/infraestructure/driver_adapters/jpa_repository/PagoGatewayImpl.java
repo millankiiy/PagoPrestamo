@@ -27,7 +27,7 @@ public class PagoGatewayImpl implements PagoGateway {
     @Override
     public Pago guardarPago(Pago pago) {
 
-        String urlPrestamo = "http://localhost:7001/api/prestamigos/prestamos/" + pago.getPrestamoId();
+        String urlPrestamo = "https://prestamopresta-production.up.railway.app/api/prestamigos/prestamos/" + pago.getPrestamoId();
 
         try {
             Map<String, Object> prestamoResponse =
